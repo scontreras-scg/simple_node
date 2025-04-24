@@ -27,11 +27,7 @@ function suma(a, b) {
   }
   
   function comparacionInsegura(a, b) {
-    if (a == b) {
-      return true;
-    }else{
-      return false;
-    }
+    return a === b;
   }
   
   function accesoInseguro(obj) {
