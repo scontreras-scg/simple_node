@@ -18,9 +18,8 @@ function suma(a, b) {
   
   // 🔁 FUNCIONES DUPLICADAS 
   
-  function sumaDuplicada(a, b) {
-    return a + b;
-  }
+  
+
   
   function restaDuplicada(a, b) {
     if (a == null || b == null) return 0;
@@ -28,7 +27,7 @@ function suma(a, b) {
   }
 
   function vulnerableEval(input) {
-    eval("console.log('Hola ' + input)");
+    console.log('Hola ' + input);
   }
   
   function bugRedefinicion() {
