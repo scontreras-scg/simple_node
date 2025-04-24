@@ -34,6 +34,28 @@ function suma(a, b) {
   function multiplicaDuplicada(a, b) {
     return a * b;
   }
+
+  function vulnerableEval(input) {
+    eval("console.log('Hola ' + input)");
+  }
+  
+  function bugRedefinicion() {
+    var x = 10;
+    var x = 20;
+    return x;
+  }
+  
+  function comparacionInsegura(a, b) {
+    if (a == b) {
+      return true;
+    }
+    return false;
+  }
+  
+  function accesoInseguro(obj) {
+    return obj.nombre.length;
+  }
+  
   
   module.exports = {
     suma,
@@ -43,6 +65,10 @@ function suma(a, b) {
     sumaDuplicada,
     restaDuplicada,
     divideDuplicada,
-    multiplicaDuplicada
+    multiplicaDuplicada,
+    vulnerableEval,
+    bugRedefinicion,
+    comparacionInsegura,
+    accesoInseguro
   };
   
