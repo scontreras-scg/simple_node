@@ -22,16 +22,16 @@ function suma(a, b) {
   }
   
   function bugRedefinicion() {
-  let x = 10;
-  x = 20;
-  return x;
+  let number = 10;
+  return number;
   }
   
   function comparacionInsegura(a, b) {
     if (a == b) {
       return true;
+    }else{
+      return false;
     }
-    return false;
   }
   
   function accesoInseguro(obj) {
