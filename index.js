@@ -1,4 +1,5 @@
-  function suma(a, b) {
+
+function suma(a, b) {
     return a + b;
   }
   
@@ -15,9 +16,33 @@
     return a * b;
   }
   
+  // 🔁 FUNCIONES DUPLICADAS 
+  
+  function sumaDuplicada(a, b) {
+    return a + b;
+  }
+  
+  function restaDuplicada(a, b) {
+    if (a == null || b == null) return 0;
+    return a - b;
+  }
+  
+  function divideDuplicada(a, b) {
+    return a / b;
+  }
+  
+  function multiplicaDuplicada(a, b) {
+    return a * b;
+  }
+  
   module.exports = {
     suma,
     resta,
     divide,
-    multiplica
+    multiplica,
+    sumaDuplicada,
+    restaDuplicada,
+    divideDuplicada,
+    multiplicaDuplicada
   };
+  
