@@ -30,10 +30,6 @@ function suma(a, b) {
   function divideDuplicada(a, b) {
     return a / b;
   }
-  
-  function multiplicaDuplicada(a, b) {
-    return a * b;
-  }
 
   function vulnerableEval(input) {
     eval("console.log('Hola ' + input)");
@@ -53,7 +49,7 @@ function suma(a, b) {
   }
   
   function accesoInseguro(obj) {
-    return obj.nombre.length;
+    return obj?.nombre?.length ?? 0;
   }
   
   
@@ -65,7 +61,6 @@ function suma(a, b) {
     sumaDuplicada,
     restaDuplicada,
     divideDuplicada,
-    multiplicaDuplicada,
     vulnerableEval,
     bugRedefinicion,
     comparacionInsegura,
