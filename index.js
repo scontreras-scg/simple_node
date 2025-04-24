@@ -26,19 +26,15 @@ function suma(a, b) {
     if (a == null || b == null) return 0;
     return a - b;
   }
-  
-  function divideDuplicada(a, b) {
-    return a / b;
-  }
 
   function vulnerableEval(input) {
     eval("console.log('Hola ' + input)");
   }
   
   function bugRedefinicion() {
-    var x = 10;
-    var x = 20;
-    return x;
+  let x = 10;
+  x = 20;
+  return x;
   }
   
   function comparacionInsegura(a, b) {
