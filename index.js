@@ -16,15 +16,6 @@ function suma(a, b) {
     return a * b;
   }
   
-  // 🔁 FUNCIONES DUPLICADAS 
-  
-  
-
-  
-  function restaDuplicada(a, b) {
-    if (a == null || b == null) return 0;
-    return a - b;
-  }
 
   function vulnerableEval(input) {
     console.log('Hola ' + input);
@@ -53,9 +44,6 @@ function suma(a, b) {
     resta,
     divide,
     multiplica,
-    sumaDuplicada,
-    restaDuplicada,
-    divideDuplicada,
     vulnerableEval,
     bugRedefinicion,
     comparacionInsegura,
